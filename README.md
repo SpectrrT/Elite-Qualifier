@@ -1,6 +1,6 @@
-# Title
+# **Elite Qualifier Project**
 
-Simple (or clever and funny?) description
+This is a project where I made a autocorrect tool that suggests and also tells you it soemthing is a word.
 
 ## Table of Contents
 
