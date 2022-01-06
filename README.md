@@ -11,7 +11,7 @@ This is a project where I made a autocorrect tool that suggests and also tells y
 - [Usage](#usage)
 
 ## Background
-test_pull_req
+
 This is why this application exists.
 
 ## Install
