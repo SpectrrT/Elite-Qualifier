@@ -18,16 +18,12 @@ def load_words():
 
   return all_words
 
-dict = enchant.Dict("en_US")
-
 def suggest(text, all_words):
-   
-
+  dict = enchant.Dict("en_US")
   if text in all_words:
     print(text + ' is a word')
   else:
-    print(text + ' is not a word')
-    print("Suggestion for " + text + " : " + str(dict.suggest(text)))
+    print(text + ' is not a word, suggestions for ' + text + " : " + str(dict.suggest(text)))
 
 def main():
     all_words = load_words()
