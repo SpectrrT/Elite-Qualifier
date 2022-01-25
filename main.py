@@ -1,5 +1,6 @@
 import time
-
+import enchant 
+import nltk
 
 # load dictionary words from file
 def load_words():
@@ -17,14 +18,16 @@ def load_words():
 
   return all_words
 
+dict = enchant.Dict("en_US")
 
 def suggest(text, all_words):
-  # This currently doesn't suggest a correction, just checks if the input is already a word. You'll want to change that 
+   
 
   if text in all_words:
     print(text + ' is a word')
   else:
     print(text + ' is not a word')
+    print("Suggestion for " + text + " : " + str(dict.suggest(text)))
 
 def main():
     all_words = load_words()
@@ -37,4 +40,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
